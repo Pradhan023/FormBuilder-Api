@@ -14,7 +14,7 @@ app.use('/form',router)
 app.listen(process.env.Port,async()=>{
     try{
         await connection()
-        console.log("Server is live on Prot " , process.env.Port);
+        console.log("Server is live on Port " , process.env.Port);
     }
     catch(err){
         console.log("Server error ", err);
