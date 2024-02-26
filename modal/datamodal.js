@@ -1,37 +1,18 @@
 const mongo = require('mongoose')
 
 const AddData = mongo.Schema({
-    type:{
-        type:String || Number,
+    dataId:{
+        type:String
     },
-    label:{
-        type:String,
-        required:false
-    },
-    checklabel:{
-        type:String,
-        required:false
-    },
-    check1:{
-        type:String,
-        required:false
-    },
-    check2:{
-        type:String,
-        required:false
-    },
-    selectlabel:{
-        type:String,
-        required:false
-    },
-    options:
-    {
-        type:Array,
-        required:false
+    Dataform:{
+        type:Object
     }
 })
 
 const AdminData = mongo.Schema({
+    dataId:{
+        type:String
+    },
     Objdata:{
         type:Object,
         required:false
